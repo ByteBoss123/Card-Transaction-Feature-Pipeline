@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "01-Ingest",
+    "ActionOnFailure": "TERMINATE_CLUSTER",
+    "Jar": "command-runner.jar",
+    "Args": ["spark-submit", "--deploy-mode", "cluster", "--conf","spark.yarn.appMasterEnv.TXN_DATA_DIR=s3://<bucket>/card-txn/data","--conf","spark.executorEnv.TXN_DATA_DIR=s3://<bucket>/card-txn/data","--conf","spark.yarn.appMasterEnv.TXN_OUTPUT_DIR=s3://<bucket>/card-txn/output/parquet","--conf","spark.executorEnv.TXN_OUTPUT_DIR=s3://<bucket>/card-txn/output/parquet","--conf","spark.yarn.appMasterEnv.TXN_WAREHOUSE_DIR=s3://<bucket>/card-txn/output/hive_warehouse","--conf","spark.executorEnv.TXN_WAREHOUSE_DIR=s3://<bucket>/card-txn/output/hive_warehouse","--conf","spark.yarn.appMasterEnv.TXN_USE_GLUE_CATALOG=true","--conf","spark.executorEnv.TXN_USE_GLUE_CATALOG=true", "s3://<bucket>/card-txn/src/01_ingest.py"]
+  },
+  {
+    "Name": "02-Features",
+    "ActionOnFailure": "TERMINATE_CLUSTER",
+    "Jar": "command-runner.jar",
+    "Args": ["spark-submit", "--deploy-mode", "cluster", "--conf","spark.yarn.appMasterEnv.TXN_DATA_DIR=s3://<bucket>/card-txn/data","--conf","spark.executorEnv.TXN_DATA_DIR=s3://<bucket>/card-txn/data","--conf","spark.yarn.appMasterEnv.TXN_OUTPUT_DIR=s3://<bucket>/card-txn/output/parquet","--conf","spark.executorEnv.TXN_OUTPUT_DIR=s3://<bucket>/card-txn/output/parquet","--conf","spark.yarn.appMasterEnv.TXN_WAREHOUSE_DIR=s3://<bucket>/card-txn/output/hive_warehouse","--conf","spark.executorEnv.TXN_WAREHOUSE_DIR=s3://<bucket>/card-txn/output/hive_warehouse","--conf","spark.yarn.appMasterEnv.TXN_USE_GLUE_CATALOG=true","--conf","spark.executorEnv.TXN_USE_GLUE_CATALOG=true", "s3://<bucket>/card-txn/src/02_features.py"]
+  },
+  {
+    "Name": "03-Validate",
+    "ActionOnFailure": "CONTINUE",
+    "Jar": "command-runner.jar",
+    "Args": ["spark-submit", "--deploy-mode", "cluster", "--conf","spark.yarn.appMasterEnv.TXN_DATA_DIR=s3://<bucket>/card-txn/data","--conf","spark.executorEnv.TXN_DATA_DIR=s3://<bucket>/card-txn/data","--conf","spark.yarn.appMasterEnv.TXN_OUTPUT_DIR=s3://<bucket>/card-txn/output/parquet","--conf","spark.executorEnv.TXN_OUTPUT_DIR=s3://<bucket>/card-txn/output/parquet","--conf","spark.yarn.appMasterEnv.TXN_WAREHOUSE_DIR=s3://<bucket>/card-txn/output/hive_warehouse","--conf","spark.executorEnv.TXN_WAREHOUSE_DIR=s3://<bucket>/card-txn/output/hive_warehouse","--conf","spark.yarn.appMasterEnv.TXN_USE_GLUE_CATALOG=true","--conf","spark.executorEnv.TXN_USE_GLUE_CATALOG=true", "s3://<bucket>/card-txn/src/03_validate.py"]
+  },
+  {
+    "Name": "04-ExportSample",
+    "ActionOnFailure": "CONTINUE",
+    "Jar": "command-runner.jar",
+    "Args": ["spark-submit", "--deploy-mode", "cluster", "--conf","spark.yarn.appMasterEnv.TXN_DATA_DIR=s3://<bucket>/card-txn/data","--conf","spark.executorEnv.TXN_DATA_DIR=s3://<bucket>/card-txn/data","--conf","spark.yarn.appMasterEnv.TXN_OUTPUT_DIR=s3://<bucket>/card-txn/output/parquet","--conf","spark.executorEnv.TXN_OUTPUT_DIR=s3://<bucket>/card-txn/output/parquet","--conf","spark.yarn.appMasterEnv.TXN_WAREHOUSE_DIR=s3://<bucket>/card-txn/output/hive_warehouse","--conf","spark.executorEnv.TXN_WAREHOUSE_DIR=s3://<bucket>/card-txn/output/hive_warehouse","--conf","spark.yarn.appMasterEnv.TXN_USE_GLUE_CATALOG=true","--conf","spark.executorEnv.TXN_USE_GLUE_CATALOG=true", "s3://<bucket>/card-txn/src/04_export_sample.py"]
+  },
+  {
+    "Name": "06-HiveLayer",
+    "ActionOnFailure": "CONTINUE",
+    "Jar": "command-runner.jar",
+    "Args": ["spark-submit", "--deploy-mode", "cluster", "--conf","spark.yarn.appMasterEnv.TXN_DATA_DIR=s3://<bucket>/card-txn/data","--conf","spark.executorEnv.TXN_DATA_DIR=s3://<bucket>/card-txn/data","--conf","spark.yarn.appMasterEnv.TXN_OUTPUT_DIR=s3://<bucket>/card-txn/output/parquet","--conf","spark.executorEnv.TXN_OUTPUT_DIR=s3://<bucket>/card-txn/output/parquet","--conf","spark.yarn.appMasterEnv.TXN_WAREHOUSE_DIR=s3://<bucket>/card-txn/output/hive_warehouse","--conf","spark.executorEnv.TXN_WAREHOUSE_DIR=s3://<bucket>/card-txn/output/hive_warehouse","--conf","spark.yarn.appMasterEnv.TXN_USE_GLUE_CATALOG=true","--conf","spark.executorEnv.TXN_USE_GLUE_CATALOG=true", "s3://<bucket>/card-txn/src/06_hive_layer.py"]
+  }
+]

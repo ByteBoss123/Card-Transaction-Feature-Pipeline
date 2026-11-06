@@ -1,0 +1,21 @@
+# Data (large, and not licensed for redistribution — see README)
+data/
+output/
+*.csv
+*.tgz
+*.parquet
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Spark
+metastore_db/
+spark-warehouse/
+derby.log
+
+# OS
+.DS_Store

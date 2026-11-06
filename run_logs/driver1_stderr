@@ -1,0 +1,186 @@
+26/08/26 02:03:58 INFO SignalUtils: Registering signal handler for TERM
+26/08/26 02:03:58 INFO SignalUtils: Registering signal handler for HUP
+26/08/26 02:03:58 INFO SignalUtils: Registering signal handler for INT
+26/08/26 02:03:58 INFO ApplicationMaster: ApplicationAttemptId: appattempt_1787709721584_0001_000001
+26/08/26 02:03:59 INFO ApplicationMaster: Starting the user application in a separate Thread
+26/08/26 02:03:59 INFO ApplicationMaster: Waiting for spark context initialization...
+26/08/26 02:04:01 INFO EMRParamSideChannel: Setting FGAC mode to false
+26/08/26 02:04:01 INFO SparkContext: Running Spark version 3.5.3-amzn-1
+26/08/26 02:04:01 INFO SparkContext: OS info Linux, 6.1.177-224.371.amzn2023.x86_64, amd64
+26/08/26 02:04:01 INFO SparkContext: Java version 17.0.20
+26/08/26 02:04:01 INFO ResourceUtils: ==============================================================
+26/08/26 02:04:01 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/08/26 02:04:01 INFO ResourceUtils: ==============================================================
+26/08/26 02:04:01 INFO SparkContext: Submitted application: CardTxn-Ingest
+26/08/26 02:04:01 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(executorType -> name: executorType, amount: 1, script: , vendor: , cores -> name: cores, amount: 4, script: , vendor: , memory -> name: memory, amount: 9486, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/08/26 02:04:01 INFO ResourceProfile: Limiting resource is cpus at 4 tasks per executor
+26/08/26 02:04:01 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/08/26 02:04:01 INFO ResourceProfile: User executor ResourceProfile created, executor resources: Map(executorType -> name: executorType, amount: 1, script: , vendor: , cores -> name: cores, amount: 4, script: , vendor: , memory -> name: memory, amount: 9486, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/08/26 02:04:01 INFO ResourceProfile: Limiting resource is cpus at 4 tasks per executor
+26/08/26 02:04:01 INFO ResourceProfileManager: Added ResourceProfile id: 1
+26/08/26 02:04:01 INFO SecurityManager: Changing view acls to: yarn,hadoop
+26/08/26 02:04:01 INFO SecurityManager: Changing modify acls to: yarn,hadoop
+26/08/26 02:04:01 INFO SecurityManager: Changing view acls groups to: 
+26/08/26 02:04:01 INFO SecurityManager: Changing modify acls groups to: 
+26/08/26 02:04:01 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: yarn, hadoop; groups with view permissions: EMPTY; users with modify permissions: yarn, hadoop; groups with modify permissions: EMPTY
+26/08/26 02:04:02 INFO Utils: Successfully started service 'sparkDriver' on port 42759.
+26/08/26 02:04:02 INFO SparkEnv: Registering MapOutputTracker
+26/08/26 02:04:02 INFO SparkEnv: Registering BlockManagerMaster
+26/08/26 02:04:02 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/08/26 02:04:02 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/08/26 02:04:02 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/08/26 02:04:02 INFO DiskBlockManager: Created local directory at /mnt1/yarn/usercache/hadoop/appcache/application_1787709721584_0001/blockmgr-ff1a6c4e-2e61-4a91-831f-f1c771f15fd3
+26/08/26 02:04:02 INFO DiskBlockManager: Created local directory at /mnt/yarn/usercache/hadoop/appcache/application_1787709721584_0001/blockmgr-952c510b-75c2-4f23-af7f-1d6509bd1ba2
+26/08/26 02:04:02 INFO MemoryStore: MemoryStore started with capacity 1048.8 MiB
+26/08/26 02:04:02 INFO SparkEnv: Registering OutputCommitCoordinator
+26/08/26 02:04:02 INFO SubResultCacheManager: Sub-result caches are disabled.
+26/08/26 02:04:02 INFO JettyUtils: Start Jetty 0.0.0.0:0 for SparkUI
+26/08/26 02:04:02 INFO Utils: Successfully started service 'SparkUI' on port 34989.
+26/08/26 02:04:02 INFO ServerInfo: Adding filter to /: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:02 INFO YarnClusterScheduler: Created YarnClusterScheduler
+26/08/26 02:04:02 INFO Utils: Using 4 preallocated executors (minExecutors: 0). Set spark.dynamicAllocation.preallocateExecutors to `false` disable executor preallocation.
+26/08/26 02:04:02 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 45229.
+26/08/26 02:04:02 INFO NettyBlockTransferService: Server created on ip-172-31-40-116.ec2.internal:45229
+26/08/26 02:04:02 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/08/26 02:04:02 INFO BlockManager: external shuffle service port = 7337
+26/08/26 02:04:02 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, ip-172-31-40-116.ec2.internal, 45229, None)
+26/08/26 02:04:02 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-40-116.ec2.internal:45229 with 1048.8 MiB RAM, BlockManagerId(driver, ip-172-31-40-116.ec2.internal, 45229, None)
+26/08/26 02:04:02 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, ip-172-31-40-116.ec2.internal, 45229, None)
+26/08/26 02:04:02 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, ip-172-31-40-116.ec2.internal, 45229, None)
+26/08/26 02:04:02 INFO SingleEventLogFileWriter: Logging events to hdfs:/var/log/spark/apps/application_1787709721584_0001_1.inprogress
+26/08/26 02:04:02 INFO Utils: Using 4 preallocated executors (minExecutors: 0). Set spark.dynamicAllocation.preallocateExecutors to `false` disable executor preallocation.
+26/08/26 02:04:02 WARN YarnSchedulerBackend$YarnSchedulerEndpoint: Attempted to request executors before the AM has registered!
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /jobs: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /jobs/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /jobs/job: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /jobs/job/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /stages: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /stages/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /stages/stage: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /stages/stage/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /stages/pool: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /stages/pool/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /storage: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /storage/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /storage/rdd: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /storage/rdd/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /environment: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /environment/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /executors: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /executors/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /executors/threadDump: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /executors/threadDump/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /executors/heapHistogram: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /executors/heapHistogram/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /static: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /api: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /jobs/job/kill: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /stages/stage/kill: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO ServerInfo: Adding filter to /metrics/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+26/08/26 02:04:03 INFO DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at ip-172-31-43-66.ec2.internal/172.31.43.66:8030
+26/08/26 02:04:03 INFO YarnRMClient: Registering the ApplicationMaster
+26/08/26 02:04:03 INFO ApplicationMaster: Preparing Local resources
+26/08/26 02:04:03 INFO SecurityManager: Changing view acls to: yarn,hadoop
+26/08/26 02:04:03 INFO SecurityManager: Changing modify acls to: yarn,hadoop
+26/08/26 02:04:03 INFO SecurityManager: Changing view acls groups to: 
+26/08/26 02:04:03 INFO SecurityManager: Changing modify acls groups to: 
+26/08/26 02:04:03 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: yarn, hadoop; groups with view permissions: EMPTY; users with modify permissions: yarn, hadoop; groups with modify permissions: EMPTY
+26/08/26 02:04:03 INFO ApplicationMaster: 
+===============================================================================
+Default YARN executor launch context:
+  env:
+    CLASSPATH -> /usr/lib/hadoop-lzo/lib/*:/usr/lib/hadoop/hadoop-aws.jar:/usr/share/aws/aws-java-sdk/*:/usr/share/aws/aws-java-sdk-v2/*:/usr/share/aws/emr/goodies/lib/emr-spark-goodies.jar:/usr/share/aws/emr/security/conf:/usr/share/aws/emr/security/lib/*:/usr/share/aws/redshift/jdbc/*:/usr/share/aws/redshift/spark-redshift/lib/*:/usr/share/aws/kinesis/spark-sql-kinesis/lib/*:/usr/share/aws/hmclient/lib/aws-glue-datacatalog-spark-client.jar:/usr/share/java/Hive-JSON-Serde/hive-openx-serde.jar:/usr/share/aws/emr/s3select/lib/emr-s3-select-spark-connector.jar:/docker/usr/lib/hadoop-lzo/lib/*:/docker/usr/lib/hadoop/hadoop-aws.jar:/docker/usr/share/aws/aws-java-sdk/*:/docker/usr/share/aws/aws-java-sdk-v2/*:/docker/usr/share/aws/emr/goodies/lib/emr-spark-goodies.jar:/docker/usr/share/aws/emr/security/conf:/docker/usr/share/aws/emr/security/lib/*:/docker/usr/share/aws/redshift/jdbc/*:/docker/usr/share/aws/redshift/spark-redshift/lib/*:/docker/usr/share/aws/kinesis/spark-sql-kinesis/lib/*:/docker/usr/share/aws/hmclient/lib/aws-glue-datacatalog-spark-client.jar:/docker/usr/share/java/Hive-JSON-Serde/hive-openx-serde.jar:/docker/usr/share/aws/emr/s3select/lib/emr-s3-select-spark-connector.jar<CPS>{{PWD}}<CPS>{{PWD}}/__spark_conf__<CPS>{{PWD}}/__spark_libs__/*<CPS>{{PWD}}/__spark_conf__/__hadoop_conf__
+    SPARK_YARN_CONTAINER_CORES -> 4
+    SPARK_YARN_STAGING_DIR -> hdfs://ip-172-31-43-66.ec2.internal:8020/user/hadoop/.sparkStaging/application_1787709721584_0001
+    SPARK_USER -> hadoop
+    AWS_SPARK_REDSHIFT_CONNECTOR_SERVICE_NAME -> EMR
+    JAVA_HOME -> /usr/lib/jvm/jre-17
+    PYTHONPATH -> {{PWD}}/pyspark.zip<CPS>{{PWD}}/py4j-0.10.9.7-src.zip
+    SPARK_PREFER_IPV6 -> false
+    SPARK_PUBLIC_DNS -> ip-172-31-40-116.ec2.internal
+
+  command:
+    LD_LIBRARY_PATH=\"/usr/lib/hadoop/lib/native:/usr/lib/hadoop-lzo/lib/native:/usr/lib/jvm/java-17-amazon-corretto.x86_64/lib/server:/docker/usr/lib/hadoop/lib/native:/docker/usr/lib/hadoop-lzo/lib/native:/docker/usr/lib/jvm/java-17-amazon-corretto.x86_64/lib/server:$LD_LIBRARY_PATH\" \ 
+      {{JAVA_HOME}}/bin/java \ 
+      -server \ 
+      -Xmx9486m \ 
+      '-XX:UseAVX=2' \ 
+      '-verbose:gc' \ 
+      '-XX:+PrintGCDetails' \ 
+      '-XX:+PrintGCDateStamps' \ 
+      '-XX:OnOutOfMemoryError=kill -9 %p' \ 
+      '-Djava.net.preferIPv6Addresses=false' \ 
+      '-verbose:gc' \ 
+      '-XX:+PrintGCDetails' \ 
+      '-XX:+PrintGCDateStamps' \ 
+      '-XX:OnOutOfMemoryError=kill -9 %p' \ 
+      '-XX:+IgnoreUnrecognizedVMOptions' \ 
+      '--add-opens=java.base/java.lang=ALL-UNNAMED' \ 
+      '--add-opens=java.base/java.lang.invoke=ALL-UNNAMED' \ 
+      '--add-opens=java.base/java.lang.reflect=ALL-UNNAMED' \ 
+      '--add-opens=java.base/java.io=ALL-UNNAMED' \ 
+      '--add-opens=java.base/java.net=ALL-UNNAMED' \ 
+      '--add-opens=java.base/java.nio=ALL-UNNAMED' \ 
+      '--add-opens=java.base/java.util=ALL-UNNAMED' \ 
+      '--add-opens=java.base/java.util.concurrent=ALL-UNNAMED' \ 
+      '--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED' \ 
+      '--add-opens=java.base/jdk.internal.ref=ALL-UNNAMED' \ 
+      '--add-opens=java.base/sun.nio.ch=ALL-UNNAMED' \ 
+      '--add-opens=java.base/sun.nio.cs=ALL-UNNAMED' \ 
+      '--add-opens=java.base/sun.security.action=ALL-UNNAMED' \ 
+      '--add-opens=java.base/sun.util.calendar=ALL-UNNAMED' \ 
+      '--add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED' \ 
+      '-Djdk.reflect.useDirectMethodHandle=false' \ 
+      '-verbose:gc' \ 
+      '-XX:+PrintGCDetails' \ 
+      '-XX:+PrintGCDateStamps' \ 
+      '-XX:OnOutOfMemoryError=kill -9 %p' \ 
+      '-XX:+UseTransparentHugePages' \ 
+      '-XX:+UseParallelGC' \ 
+      '-XX:InitiatingHeapOccupancyPercent=70' \ 
+      -Djava.io.tmpdir={{PWD}}/tmp \ 
+      '-Dspark.history.ui.port=18080' \ 
+      '-Dspark.ui.port=0' \ 
+      '-Dspark.driver.port=42759' \ 
+      -Dspark.yarn.app.container.log.dir=<LOG_DIR> \ 
+      org.apache.spark.executor.YarnCoarseGrainedExecutorBackend \ 
+      --driver-url \ 
+      spark://CoarseGrainedScheduler@ip-172-31-40-116.ec2.internal:42759 \ 
+      --executor-id \ 
+      <executorId> \ 
+      --hostname \ 
+      <hostname> \ 
+      --cores \ 
+      4 \ 
+      --app-id \ 
+      application_1787709721584_0001 \ 
+      --resourceProfileId \ 
+      0 \ 
+      1><LOG_DIR>/stdout \ 
+      2><LOG_DIR>/stderr
+
+  resources:
+    hudi-defaults.conf -> resource { scheme: "hdfs" host: "ip-172-31-43-66.ec2.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1787709721584_0001/hudi-defaults.conf" } size: 1471 timestamp: 1787709827775 type: FILE visibility: PRIVATE
+    py4j-0.10.9.7-src.zip -> resource { scheme: "hdfs" host: "ip-172-31-43-66.ec2.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1787709721584_0001/py4j-0.10.9.7-src.zip" } size: 42424 timestamp: 1787709831890 type: FILE visibility: PRIVATE
+    __spark_conf__ -> resource { scheme: "hdfs" host: "ip-172-31-43-66.ec2.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1787709721584_0001/__spark_conf__.zip" } size: 348889 timestamp: 1787709832479 type: ARCHIVE visibility: PRIVATE
+    pyspark.zip -> resource { scheme: "hdfs" host: "ip-172-31-43-66.ec2.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1787709721584_0001/pyspark.zip" } size: 2439356 timestamp: 1787709831390 type: FILE visibility: PRIVATE
+    __spark_libs__ -> resource { scheme: "hdfs" host: "ip-172-31-43-66.ec2.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1787709721584_0001/__spark_libs__17335748177236397202.zip" } size: 374398481 timestamp: 1787709827267 type: ARCHIVE visibility: PRIVATE
+    hive-site.xml -> resource { scheme: "hdfs" host: "ip-172-31-43-66.ec2.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1787709721584_0001/hive-site.xml" } size: 2146 timestamp: 1787709827752 type: FILE visibility: PRIVATE
+
+===============================================================================
+26/08/26 02:04:03 INFO YarnAllocator: Resource profile 0 doesn't exist, adding it
+26/08/26 02:04:03 INFO Configuration: resource-types.xml not found
+26/08/26 02:04:03 INFO ResourceUtils: Unable to find 'resource-types.xml'.
+26/08/26 02:04:03 INFO Utils: Using 4 preallocated executors (minExecutors: 0). Set spark.dynamicAllocation.preallocateExecutors to `false` disable executor preallocation.
+26/08/26 02:04:03 INFO ApplicationMaster: Initializing service data for shuffle service using name 'spark_shuffle'
+26/08/26 02:04:03 INFO YarnSchedulerBackend$YarnSchedulerEndpoint: ApplicationMaster registered as NettyRpcEndpointRef(spark://YarnAM@ip-172-31-40-116.ec2.internal:42759)
+26/08/26 02:04:03 INFO YarnAllocator: Will request 4 executor container(s) for  ResourceProfile Id: 0, each with 4 core(s) and 11264 MB memory. with custom resources: <memory:11264, max memory:2147483647, vCores:4, max vCores:2147483647>
+26/08/26 02:04:03 INFO YarnAllocator: Submitted 4 unlocalized container requests.
+26/08/26 02:04:03 INFO ApplicationMaster: Started progress reporter thread with (heartbeat : 3000, initial allocation : 200) intervals
+26/08/26 02:04:03 INFO YarnClusterSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+26/08/26 02:04:03 INFO YarnClusterScheduler: YarnClusterScheduler.postStartHook done
+26/08/26 02:04:03 INFO YarnAllocator: Launching container container_1787709721584_0001_01_000002 on host ip-172-31-41-107.ec2.internal for executor with ID 1 for ResourceProfile Id 0 with resources <memory:11264, max memory:12288, vCores:1, max vCores:4>
+26/08/26 02:04:03 INFO YarnAllocator: Launching executor with 9485m of heap (plus 1779m overhead/off heap) and 4 cores
+26/08/26 02:04:03 INFO YarnAllocator: Received 1 containers from YARN, launching executors on 1 of them.
+26/08/26 02:04:04 ERROR ApplicationMaster: User application exited with status 1

@@ -1,0 +1,41 @@
+{
+  "sample_shape": [
+    476080,
+    17
+  ],
+  "train_shape": [
+    380864,
+    16
+  ],
+  "test_shape": [
+    95216,
+    16
+  ],
+  "test_fraud_rate": 0.0625,
+  "full_features": {
+    "roc_auc": 0.9957322738095538,
+    "pr_auc": 0.9678189825651657
+  },
+  "no_merchant_leak_features": {
+    "roc_auc": 0.9871032973281123,
+    "pr_auc": 0.9256163263441911
+  },
+  "feature_importances_full": {
+    "merchant_fraud_rate": 0.5515685677528381,
+    "Use_Chip": 0.1315317153930664,
+    "Merchant_State": 0.08595219999551773,
+    "merchant_txn_count": 0.06747166067361832,
+    "MCC": 0.03902246803045273,
+    "seconds_since_last_txn": 0.02233109064400196,
+    "distinct_mcc_trailing20": 0.019855938851833344,
+    "Amount": 0.017284158617258072,
+    "avg_amount_trailing5": 0.013311809860169888,
+    "card_txn_seq_num": 0.011945199221372604,
+    "stddev_amount_trailing20": 0.010899519547820091,
+    "amount_zscore_vs_trailing20": 0.010195238515734673,
+    "Has_Error": 0.007757588289678097,
+    "avg_amount_trailing20": 0.007114172913134098,
+    "txn_count_trailing20": 0.003641888964921236,
+    "txn_count_trailing5": 0.00011674935376504436
+  }
+}

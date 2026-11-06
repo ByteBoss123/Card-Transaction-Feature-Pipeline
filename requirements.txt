@@ -1,0 +1,5 @@
+pyspark>=4.2.0
+xgboost>=3.4.0
+scikit-learn>=1.8.0
+pandas>=2.0.0,<3.0.0
+pyarrow>=25.0.0
